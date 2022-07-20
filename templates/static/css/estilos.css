@@ -1,8 +1,10 @@
+/* Estilos para el div contenedor */
 .contenedor {
     display: grid;
     justify-content: center;
 }
 
+/* Estilos para el formulario */
 .formulario {
     padding: 10px;
     border: 2px solid;
@@ -10,6 +12,7 @@
 }
 
 
+/* Estilos para los campos de datos del formulario */
 .datosFormulario {
     display: grid;
     padding-top: 15px;
@@ -18,6 +21,7 @@
 
 }
 
+/* Estilos para el título y el párrafo del formulario */
 h1,
 p {
     text-align: center;
@@ -25,7 +29,7 @@ p {
 }
 
 
-
+/* Estilos para los div que contendrán los campos del formulario */
 .campos {
     display: flex;
     align-items: center;
@@ -33,12 +37,14 @@ p {
     column-gap: 10px;
 }
 
+/* Estilos para las etiquetas del formulario */
 label{
     font-family: 'Times New Roman', Times, serif;
     font-size: 20px;
     font-weight: bold;
 }
 
+/* Estilos para el botón de enviar datos del formulario */
 .boton {
     display: flex;
     align-items: center;
@@ -46,6 +52,7 @@ label{
 }
 
 
+/* Estilos para los mensajes de error de los campos que no se llenen del formulario */
 .errores{
     -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.3);
     -moz-box-shadow: 0 0 10px rgba(0,0,0,0.3);
@@ -61,6 +68,7 @@ label{
     position: absolute;
 }
 
+/* Estilos para el cuadro donde estará el código captcha */
 #cb {
     height: 40px;
     width: 200px;
@@ -81,8 +89,9 @@ label{
 }
 
 
+
+
 #chan {
-    
     bottom: 0;
     height: 50px;
     width: 100%;
@@ -91,6 +100,7 @@ label{
 
 }
 
+/* Estilos para el texto del código Captcha */
 a {
     font-size: 25px;
     color: white;

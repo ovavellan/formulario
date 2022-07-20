@@ -22,54 +22,61 @@
 
 
 
-  
+
 
 </head>
 
 <body>
+    <!-- div contenedor -->
     <div class="contenedor">
         <form class="formulario p-3 mb-2 bg-warning text-dark">
 
+            <!-- Título de formulario -->
             <h1>Formulario</h1>
 
             <p>Por favor ingrese sus datos</p>
 
 
+            
             <div class="datosFormulario">
+                <!-- Datos para nombres -->
                 <div class="campos">
                     <label class="etiqueta">Nombres:</label> <br>
                     <input type="text" class="form-control" id="itNombre">
                     <div id="mensaje1" class="errores">Escribe un nombre</div>
                 </div>
 
-
+                <!-- Datos para Apellidos -->
                 <div class="campos">
                     <label class="etiqueta">Apellidos:</label> <br>
                     <input type="text" class="form-control" id="itApellido">
                     <div id="mensaje2" class="errores">Escribe los Apellidos</div>
                 </div>
 
+                <!-- Datos para Edad -->
                 <div class="campos">
                     <label class="etiqueta">Edad:</label> <br>
                     <input type="number" class="form-control" id="itEdad">
                     <div id="mensaje3" class="errores">Escribe una Edad</div>
                 </div>
 
+                <!-- Datos para email -->
                 <div class="campos">
                     <label class="etiqueta">Email:</label> <br>
                     <input type="email" class="form-control" id="itEmail" placeholder="oscaravellan2000@gmail.com">
                     <div id="mensaje4" class="errores">Ingresa una dirección de correo electrónico valida</div>
                 </div>
 
+                <!-- Datos para mensaje -->
                 <div class="campos">
                     <label class="etiqueta">Mensaje:</label>
                     <input type="text" class="form-control" id="itMensaje">
                     <div id="mensaje5" class="errores">Escribe algún mensaje</div>
                 </div>
 
-
+                <!-- Código Captcha -->
                 <div class="captcha">
-                    <h3 align="center"->Código Captcha</h3>
+                    <h3 align="center" ->Código Captcha</h3>
                     <div align="center">
                         <input type="text" id="inp" autocomplete="off" placeholder="Escriba el código captcha">
                     </div>
@@ -82,7 +89,7 @@
                 </div>
 
 
-
+                <!-- Botón para enviar datos -->
                 <div class="boton">
                     <input type="submit" id="bEnviar" value="Enviar Datos">
                 </div>
@@ -92,6 +99,7 @@
         </form>
     </div>
 
+    <!-- importamos las funcionalidades de javascript -->
     <script src="/static/js/validacion.js"></script>
 </body>
 

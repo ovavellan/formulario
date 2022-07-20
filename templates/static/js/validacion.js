@@ -53,23 +53,29 @@ $(document).ready(function () {
     });
 });
 
+
+// Función para validación de código captcha
 $(document).ready(function () {
 
+    // Texto para intercalar combinaciones del código captcha
     txt = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
     captcha = "";
 
+    // Bucle para reiniciar captcha
     for (var i = 1; i <= 6; i++) {
         captcha = captcha + txt.charAt(Math.floor(Math.random() * 63));
 
     }
     $("#cb").text(captcha);
 
+    // Función click sobre código captcha
     $("#re").click(function () {
         txt = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
         captcha = "";
 
+        // Condicional para validar código captcha
         for (var i = 1; i <= 6; i++) {
             captcha = captcha + txt.charAt(Math.floor(Math.random() * 63));
 
@@ -77,15 +83,18 @@ $(document).ready(function () {
         $("#cb").text(captcha);
     })
 
+    // Funcion para enviar dato del código captcha por medio de botón
     $("#bEnviar").click(function () {
         var val1 = $("#inp").val();
         if (captcha == val1) {
-            alert("Valid captcha");
+            // Alerta que indicará que el código captcha ha sido ingresado correctamente
+            alert("El código Captcha ingresado es correcto");
             $("#inp").val("");
 
         }
+        // Alerta que indicará que el código captcha esta mal ingresado
         else {
-            alert(" Invalid captcha");
+            alert("El código Captcha ingresado es incorrecto");
             $("#inp").val("");
         }
     })
