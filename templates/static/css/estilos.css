@@ -60,3 +60,39 @@ label{
     padding: 10px;
     position: absolute;
 }
+
+#cb {
+    height: 40px;
+    width: 200px;
+    border: 2px solid #ff0066;
+    font-size: 30px;
+    text-align: center;
+    background: #000;
+    color: white;
+    position: absolute;
+    margin-left: 50px;
+}
+
+
+#re {
+    margin-top: 20px;
+    position: absolute;
+    font-size: 30px;
+}
+
+
+#chan {
+    
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    line-height: 50px;
+
+}
+
+a {
+    font-size: 25px;
+    color: white;
+
+}
