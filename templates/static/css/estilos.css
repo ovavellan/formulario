@@ -1,0 +1,62 @@
+.contenedor {
+    display: grid;
+    justify-content: center;
+}
+
+.formulario {
+    padding: 10px;
+    border: 2px solid;
+    width: 440px;
+}
+
+
+.datosFormulario {
+    display: grid;
+    padding-top: 15px;
+    grid-template-rows: repeat(6, auto);
+    row-gap: 50px;
+
+}
+
+h1,
+p {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+.campos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+label{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.boton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.errores{
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    -o-box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    background: red;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    color: #fff;
+    display: none;
+    font-size: 14px;
+    margin-top: -80px;
+    margin-left: 340px;
+    padding: 10px;
+    position: absolute;
+}
